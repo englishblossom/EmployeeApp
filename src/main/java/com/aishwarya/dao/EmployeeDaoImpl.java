@@ -44,18 +44,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
   return employee;
  
  }
- 
-// public int deleteEmployee(Long employeeId) {
-//  int count = jdbcTemplate.update("DELETE from trn_employee WHERE employee_id = ?", new Object[] { employeeId });
-//  return count;
-// }
- 
-// public int updateEmployee(Employee employee) {
-//  int count = jdbcTemplate.update(
-//    "UPDATE trn_employee set first_name = ? , last_name = ? , age = ? where employee_id = ?", new Object[] {
-//      employee.getFirstName(), employee.getLastName(), employee.getAge(), employee.getEmployeeId() });
-//  return count;
-// }
+
  
  public int createEmployee(Employee employee) {
   int count = jdbcTemplate.update(
