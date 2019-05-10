@@ -22,15 +22,7 @@ public class EmployeeServiceImpl implements EmployeeService {
   Employee employee = employeeDao.getEmployee(employeeId);
   return employee;
  }
-// 
-// public int deleteEmployee(Long employeeId) {
-//  return employeeDao.deleteEmployee(employeeId);
-// }
-// 
-// public int updateEmployee(Employee employee) {
-//  return employeeDao.updateEmployee(employee);
-// }
- 
+
  public int createEmployee(Employee employee) {
   return employeeDao.createEmployee(employee);
  }
